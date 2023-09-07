@@ -7,3 +7,12 @@ Dependiendo de la información que introduzcas el programa checara si tienes los
 
 Avanze 1:
 El programa empieza preguntando cuanto hiero produces por minuto "iron_ppm" y basado en eso te dice cuantas lineas de producion puedes crear de un material, por ejemplo para laminas de hierro "iron_sheets" necesitan 30 ppm asi que divide el hierro entre 30 y te dice cuantas lineas puedes crear. Si no puedes crear una linea te dice que no tienes suficientes para una linea de ese material. Para los tornillos "screws" es un poco distinto ya que estan hechos de un material que no es el hierro basico. Esta hecho de barras de hierro "iron_rods" haci que divide el resultado de esa operacion para decirte si puedes hacer una linea de tornillos.
+
+Avanze 2:
+El programa usa operaciones para encontrar que tantas lineas completas de producion para cada material puedes hacer, usa divisiones sin residuo para esto.
+
+Avanze 3:
+Empeze a usar Def para las areas que se repiten, no se puede usar en todas las partes del codigo ya que en muchas de estas se usan valores que van variando de material a material. Los estoy usando para unos edificios que se necesitan para la producion de materiales. Muchos de estos materiales tienen un numero similar de edificios requiridos. Tambien se usa para que determine que nivel de conveyor belts que necesita segun cuanto produce.
+
+Avanze 4:
+El codigo usa if y else para determinar si tienes lo suficiente para poder fabricar algun material, tambien se puede ver dentro de una funcion para ver que nivel de conveyorbelt necesita la producion del material, entre mas materiales produces, mas alto va a ser el nivel de los conveyor belts que necesitas.
