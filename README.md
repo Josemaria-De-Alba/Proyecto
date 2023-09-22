@@ -16,3 +16,6 @@ Empeze a usar Def para las areas que se repiten, no se puede usar en todas las p
 
 Avanze 4:
 El codigo usa if y else para determinar si tienes lo suficiente para poder fabricar algun material, tambien se puede ver dentro de una funcion para ver que nivel de conveyorbelt necesita la producion del material, entre mas materiales produces, mas alto va a ser el nivel de los conveyor belts que necesitas.
+
+Avanze 5:
+Esta semana agrege unas nuevas variables para que mientras tengan sierto valor, el codigo sigue corriendo y puede funcionar hasta que la persona que lo esta usando lo cierre. Esto es para que se pueda usar el codigo mas de una vez sin tener que volver a correr el codigo y en vez solo presionar que lo sigues queriendo usar.
