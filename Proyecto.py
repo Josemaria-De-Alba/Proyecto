@@ -25,8 +25,12 @@ active_program=0
 
 iron_ppm=0
 
+factorynumber=1
 
 while active_program!=1:
+    quicklist=["Factory number"]
+    quicklist.append(factorynumber)
+    quicklist.append("Quicklist factory for:")
     active_program=int(input("What ore does your factory use? \n"
                              "Press 1 To End Program \n"
                              "Press 2 For Iron"))
@@ -48,22 +52,29 @@ while active_program!=1:
         para una linea, divide el hierro quetienes entre 30 y te da el numero
         esacto de lineas de producion que puedes hacer.
         """
-        
+        quicklist.append(iron_ppm)
+        quicklist.append("iron or per minute")
         if iron_sheets>=1:
             print("You can produce",iron_sheets,"lines of iron sheets")
             smelt_and_construct(iron_ppm,iron_sheets)
             conveyors(iron_sheets)
+            quicklist.append("Iron Sheet Line(s)")
+            quicklist.append(iron_sheets)
     
         else:
             print("You cannot produce iron sheets.")
+            quicklist.append("Iron Sheet Line(s) 0")
     
         if iron_rods>=1:
             print("You can produce",iron_rods,"lines of iron rods")
             smelt_and_construct(iron_ppm,iron_rods)
             conveyors(iron_rods)
+            quicklist.append("Iron Rod Line(s)")
+            quicklist.append(iron_rods)
 
         else:
             print("You cannot produce iron rods.")
+            quicklist.append("Iron Rod(s) 0")
     
         if screws>=1:
             print("You can produce",screws,"lines of screws")
@@ -71,9 +82,14 @@ while active_program!=1:
             print("You also need", iron_rods,\
             "more constructors for metal pipes for the screws.")
             conveyors(screws)
+            quicklist.append("Screw Line(s)")
+            quicklist.append(screws)
 
         else:
             print("You cannot produce screws.")
+            quicklist.append("Screw Line(s) 0")
+        print(quicklist)
+        factorynumber=factorynumber+1
 """
 Estos "if" y "else" te dicen si puedes producir una linea de un material o si no
 tienes suficiente material.
