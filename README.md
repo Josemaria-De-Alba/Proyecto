@@ -19,3 +19,6 @@ El codigo usa if y else para determinar si tienes lo suficiente para poder fabri
 
 Avanze 5:
 Esta semana agrege unas nuevas variables para que mientras tengan sierto valor, el codigo sigue corriendo y puede funcionar hasta que la persona que lo esta usando lo cierre. Esto es para que se pueda usar el codigo mas de una vez sin tener que volver a correr el codigo y en vez solo presionar que lo sigues queriendo usar.
+
+Avanze 6:
+Para mejorar el trabajo pense que aparte de todo el texto que tiene todo lo que necesitas para cada fabrica, tambien te da una lista que es un resumen para que no necesariamente tengas que encontrar una parte espesifica en todo el texto, tambien puedes ver este resumen para tener una idea de que tanto puedes producir en esta fabrica.
