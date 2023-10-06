@@ -27,13 +27,23 @@ iron_ppm=0
 
 factorynumber=1
 
+production_requirements=[
+    ["Iron Sheet: 30 in 20 out", "Rod: 15 in 15 out", "Screw: 10 in 40 out",
+     "Reinforced Sheets: 90 in 5 out", "Modular Frame: 66 in 2 out"],
+    ["Wire: 15 in 30 out","Cable: 30 in 30 out","Copper Sheet: 20 in 10 out",
+     "Copper Powder:300 in 50 out"],
+    ["Steel Beam: 60 in 15 out","Steel Pipe: 30 in 20 out"],
+    ["Fuel: 60 in 40 out","Rubber: 30 in 20 out","Plastic: 30 in 20 out",
+     "Polymer Resin: 60 in 130 out"]
+    ]
 while active_program!=1:
     quicklist=["Factory number"]
     quicklist.append(factorynumber)
     quicklist.append("Quicklist factory for:")
     active_program=int(input("What ore does your factory use? \n"
                              "Press 1 To End Program \n"
-                             "Press 2 For Iron"))
+                             "Press 2 For Iron \n"
+                             "Press 6 to check standard production recepies \n"))
     if active_program==2:
         iron_ppm=int(input("How much iron ore do you produce per minute in this module"))
         """
@@ -90,6 +100,48 @@ while active_program!=1:
             quicklist.append("Screw Line(s) 0")
         print(quicklist)
         factorynumber=factorynumber+1
+    if active_program==6:
+        print("Welcome to the FICSIT material requirements list, to start please "
+              "select a raw material from the following list. Then you can select "
+              "the spesific material you want to make. This list works using standard "
+              "production recepies for each material. What this means is it gives you "
+              "the average production of a material. \n"
+              "Example: Material A standar production makes 15 of a material per minute "
+              "using 30 iron ore per minute. In this case the recepie would look like "
+              "this: \n"
+              "Material A: 30 in 15 out")
+        listmaterial=int(input("What ore would you like to check a recipe for? \n"
+                               "Press 0 For Iron \n"
+                               "Press 1 For Copper \n"
+                               "Press 2 For Steel \n"
+                               "Press 3 For Oil \n"))
+        if listmaterial==0:
+            material=int(input("What material do you want? \n"
+                               "Press 0 For Iron Sheets \n"
+                               "Press 1 For Rods \n"
+                               "Press 2 For Screws \n"
+                               "Press 3 For Reinforced Sheets \n"
+                               "Press 4 For Modular Frames \n"))
+            print(production_requirements[listmaterial][material])
+        if listmaterial==1:
+            material=int(input("What material do you want \n"
+                               "Press 0 For Wire \n"
+                               "Press 1 For Cable \n"
+                               "Press 2 For Copper Sheet \n"
+                               "Press 3 For Copper Powder \n"))
+            print(production_requirements[listmaterial][material])
+        if listmaterial==2:
+            material=int(input("What material do you want \n"
+                               "Press 0 For Steel Beam \n"
+                               "Press 1 For Steel Pipe \n"))
+            print(production_requirements[listmaterial][material])
+        if listmaterial==3:
+            material=int(input("What material do you want \n"
+                               "Press 0 For Fuel \n"
+                               "Press 1 For Rubber \n"
+                               "Press 2 For Plastic \n"
+                               "Press 3 For Polymer Resin \n"))
+            print(production_requirements[listmaterial][material])
 """
 Estos "if" y "else" te dicen si puedes producir una linea de un material o si no
 tienes suficiente material.
