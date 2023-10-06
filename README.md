@@ -22,3 +22,6 @@ Esta semana agrege unas nuevas variables para que mientras tengan sierto valor, 
 
 Avanze 6:
 Para mejorar el trabajo pense que aparte de todo el texto que tiene todo lo que necesitas para cada fabrica, tambien te da una lista que es un resumen para que no necesariamente tengas que encontrar una parte espesifica en todo el texto, tambien puedes ver este resumen para tener una idea de que tanto puedes producir en esta fabrica.
+
+Avanze 7:
+Para agregar una matriz, cree una biblioteca que sirve para encontrar recetas para materiales espesificos dependiendo en que qieres producir. Lo que hace es que dice cuanto material necesitas para poder producir el maximo en uno de los constructores para ser efficiente. Se podrian inserar mas o menos del material pero no seria lo mas efficiente, que es el proposito de este programa.
