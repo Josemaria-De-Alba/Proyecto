@@ -1,3 +1,4 @@
+import math
 def smelt_and_construct(metal):
     """
     Recibe: iron_ppm
@@ -69,9 +70,9 @@ while active_program != 1:
         cuanto puedes construir.
         """
 
-        iron_sheets = iron_ppm//30
-        iron_rods = iron_ppm//15
-        screws = iron_rods//.66
+        iron_sheets = math.floor(iron_ppm/30)
+        iron_rods = math.floor(iron_ppm/15)
+        screws = math.floor(iron_rods//.66)
         
         """
         Las operaciones calculan cuantas lineas de produccion puedes hacer
