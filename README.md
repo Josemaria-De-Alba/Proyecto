@@ -27,4 +27,4 @@ Avance 7:
 Para agregar una matriz, cree una biblioteca que sirve para encontrar recetas para materiales espesificos dependiendo en que qieres producir. Lo que hace es que dice cuanto material necesitas para poder producir el maximo en uno de los constructores para ser efficiente. Se podrian inserar mas o menos del material pero no seria lo mas efficiente, que es el proposito de este programa.
 
 Avances Finales:
-Agrege la bibiliteca de math para que sea mas facil encontrar valores completos minimos de las operaciones que originalmente eran divisiones. Es util esta biblioteca ya que con el floor puedo encontrar el numero redondeado hacia abajo. Podia hacer algo similar antes de importar la biblioteca pero con esta funcion es mas facil.
+Agrege la bibiliteca de math para que sea mas facil encontrar valores completos minimos de las operaciones que originalmente eran divisiones. Es util esta biblioteca ya que con el floor puedo encontrar el numero redondeado hacia abajo. Podia hacer algo similar antes de importar la biblioteca pero con esta funcion es mas facil. Tambien agregue una nueva funcion que crea una nueva lista cada vez que pones un nuevo valor para ppm.
