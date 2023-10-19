@@ -1,3 +1,8 @@
+"""
+Josemaria De Alba
+A01706847
+Ficsit Efficient Factory Module
+"""
 import math
 def smelt_and_construct(metal):
     """
@@ -23,6 +28,22 @@ def conveyors(conveyors):
         print("Use Level 3 Conveyors")
     if conveyors >= 5:
         print("Use Level 4 Conveyors")
+        
+def new_quicklist(number,material,metal):
+    """
+    Recibe:factory_number,iron_ppm, metal
+    Saca: Una lista pre hecha que cambia el numero de la lista, el metal por minuto,
+    y el tipo de metal cuando se usa.
+    Devuelve: Una lista que incluye los valores iniciales dependiendo en que
+    codigo intenta correr.
+    """
+    quicklist = ["Factory number"]
+    quicklist.append(number)
+    quicklist.append("Quicklist factory for:")
+    quicklist.append(material)
+    quicklist.append(metal)
+    quicklist.append("ore per minute")
+    return quicklist
     
 """
 Esta funcion la escribi para encontrar cuantos edificios va a tener la fabrica,
@@ -53,15 +74,14 @@ production_requirements = [
      "Polymer Resin: 60 in 130 out"]
     ]
 while active_program != 1:
-    quicklist = ["Factory number"]
-    quicklist.append(factory_number)
-    quicklist.append("Quicklist factory for:")
+    """quicklist=new_quicklist(factory_number)"""
     active_program = int(input("What ore does your factory use? \n"
                              "Press 1 To End Program \n"
                              "Press 2 For Iron \n"
                              "Press 6 to check standard"
                                "production recepies \n"))
     if active_program == 2:
+        metal="Iron"
         iron_ppm = int(input("How much iron ore do you produce per minute"
                              "in this module"))
         """
@@ -80,8 +100,7 @@ while active_program != 1:
         para una linea, divide el hierro quetienes entre 30 y te da el numero
         esacto de lineas de producion que puedes hacer.
         """
-        quicklist.append(iron_ppm)
-        quicklist.append("iron or per minute")
+        quicklist=new_quicklist(factory_number,iron_ppm,metal)
         if iron_sheets >= 1:
             print("You can produce",iron_sheets,"lines of iron sheets")
             smelt_and_construct(iron_ppm)
