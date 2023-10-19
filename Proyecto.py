@@ -78,7 +78,7 @@ while active_program != 1:
     active_program = int(input("What ore does your factory use? \n"
                              "Press 1 To End Program \n"
                              "Press 2 For Iron \n"
-                             "Press 6 to check standard"
+                             "Press 6 to check standard "
                                "production recepies \n"))
     if active_program == 2:
         metal="Iron"
